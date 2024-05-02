@@ -1,87 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body * {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 body {
-    margin: 0;
-    background: rgb(46,50,63);
-    background: linear-gradient(225deg, rgba(46,50,63,1) 0%, rgba(34,38,47,1) 100%);
-    color: white;
+  margin: 0;
+  background: rgb(46, 50, 63);
+  background: linear-gradient(
+    225deg,
+    rgba(46, 50, 63, 1) 0%,
+    rgba(34, 38, 47, 1) 100%
+  );
+  color: white;
 }
 
-.app {
-    display: flex;
-    height: 100vh;
-}
-
-.app > aside {
-    width: 336px;
+/* .app > aside {
+  width: 336px;
 }
 
 .app > main {
-    flex-grow: 1;
-    display: flex;
-    gap: 36px;
-    padding: 36px;
+  flex-grow: 1;
+  display: flex;
+  gap: 36px;
+  padding: 36px;
 }
 
 .app > main > .column-1 {
-    width: 60%;
+  width: 60%;
 }
 
 .app > main > .column-2 {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+} */
 
-.app > main > .column-2 > div:first-child {
-    height: 50%;
+/* .app > main > .column-2 > div:first-child {
+  height: 50%;
 }
 
 .app > main > .column-2 > div:last-child {
-    height: 50%;  
-}
+  height: 50%;
+} */
 
 /* Global css */
 .dark {
-    border-radius: 24px;
-    background-color: #2e323f;
-    padding: 24px;
-    height: calc(100% - 48px);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  border-radius: 24px;
+  background-color: #2e323f;
+  padding: 24px;
+  height: calc(100% - 48px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
 }
-
-/* Sidebar */
+/* 
+Sidebar
 .sidebar {
-    background: radial-gradient(circle, rgba(46,50,63,1) 0%, rgba(34,38,47,1) 100%);
-    box-shadow: none;
-    border-radius: 0;
-    padding: 36px 50px;
-    height: calc(100% - 72px);
-}
+  background: radial-gradient(
+    circle,
+    rgba(46, 50, 63, 1) 0%,
+    rgba(34, 38, 47, 1) 100%
+  );
+  box-shadow: none;
+  border-radius: 0;
+  padding: 36px 50px;
+  height: calc(100% - 72px);
+} */
 
 /* LinkButtons */
-.link-button {
-    display: block;
-    width: 100%;
-    margin-bottom: 24px;
-    border-radius: 12px;
-    padding: 18px 16px;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(90deg, rgba(46,50,63,1) 0%, #2c2f3c 100%);
-    transition: all 0.2s ease;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.link-button:hover {
-    background: #2c2f3c;
-}

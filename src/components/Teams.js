@@ -1,5 +1,7 @@
+import BoxTemplate from "./BoxTemplate";
+
 const Teams = () => {
-  return <div className="dark teams"></div>;
+  return <BoxTemplate title="Equipes">Ma liste des équipes</BoxTemplate>;
 };
 
 export default Teams;

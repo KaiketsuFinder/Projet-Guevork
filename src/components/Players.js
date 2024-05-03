@@ -1,5 +1,7 @@
+import BoxTemplate from "./BoxTemplate";
+
 const Players = () => {
-  return <div className="dark players"></div>;
+  return <BoxTemplate title="Joueurs">Ma liste des joueurs</BoxTemplate>;
 };
 
 export default Players;

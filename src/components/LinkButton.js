@@ -4,10 +4,12 @@ const LinkButton = (props) => {
   const handleClick = () => {
     console.log(props.children);
   };
+
   return <Container onClick={handleClick}>{props.children}</Container>;
 };
 
 export default LinkButton;
+
 const Container = styled.button`
   display: block;
   width: 100%;
@@ -23,6 +25,7 @@ const Container = styled.button`
   color: white;
   font-size: 16px;
   font-weight: 500;
+
   &:hover {
     background: #2c2f3c;
   }

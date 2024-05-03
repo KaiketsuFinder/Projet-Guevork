@@ -1,10 +1,9 @@
-import LinkButton from "./LinkButton";
 import styled from "styled-components";
-import Header from "./Header";
+import LinkButton from "./LinkButton";
+
 const Sidebar = () => {
   return (
     <Container>
-      <Header name="nom"> Eventements </Header>
       <LinkButton>Evenements</LinkButton>
       <LinkButton>Joueurs</LinkButton>
       <LinkButton>Equipes</LinkButton>
@@ -13,6 +12,7 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
 const Container = styled.div`
   background: radial-gradient(
     circle,
@@ -22,5 +22,5 @@ const Container = styled.div`
   box-shadow: none;
   border-radius: 0;
   padding: 36px 50px;
-  height: calc(100%-72px);
+  height: calc(100% - 72px);
 `;

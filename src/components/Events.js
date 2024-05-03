@@ -1,10 +1,7 @@
-import Header from "./Header";
+import BoxTemplate from "./BoxTemplate";
+
 const Events = () => {
-  return (
-    <div className="dark events">
-      <Header name="Events"> Eventements </Header>
-    </div>
-  );
+  return <BoxTemplate title="Evenements">Ma liste d'événements</BoxTemplate>;
 };
 
 export default Events;

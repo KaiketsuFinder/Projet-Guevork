@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const LinkButton = (props) => {
   const handleClick = () => {
+    props.totoFunc();
     console.log(props.children);
   };
 

@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import LinkButton from "./LinkButton";
+import React from 'react';
 
 const Sidebar = () => {
-  const [ChangeColor,setChangeColor] = React.useState (Container.LinkButton)
+  const [changeColor, setChangeColor] = React.useState('black')
+  
   return (
-    <Container>
-      <LinkButton onClick={()=> this.setChangeColor}>Evenements</LinkButton>
-      <LinkButton onClick={()=> this.setChangeColor}>Joueurs</LinkButton>
-      <LinkButton onClick={()=> this.setChangeColor}>Equipes</LinkButton>
+    <Container style={{ background: changeColor}}>
+      <LinkButton totoFunc={()=> setChangeColor('red')}>Evenements</LinkButton>
+      <LinkButton totoFunc={()=> setChangeColor('blue')}>Joueurs</LinkButton>
+      <LinkButton totoFunc={()=> setChangeColor('green')}>Equipes</LinkButton>
     </Container>
   );
 };

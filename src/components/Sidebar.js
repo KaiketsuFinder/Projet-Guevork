@@ -2,14 +2,16 @@ import styled from "styled-components";
 import LinkButton from "./LinkButton";
 
 const Sidebar = () => {
+  const [ChangeColor,setChangeColor] = React.useState (Container.LinkButton)
   return (
     <Container>
-      <LinkButton>Evenements</LinkButton>
-      <LinkButton>Joueurs</LinkButton>
-      <LinkButton>Equipes</LinkButton>
+      <LinkButton onClick={()=> this.setChangeColor}>Evenements</LinkButton>
+      <LinkButton onClick={()=> this.setChangeColor}>Joueurs</LinkButton>
+      <LinkButton onClick={()=> this.setChangeColor}>Equipes</LinkButton>
     </Container>
   );
 };
+
 
 export default Sidebar;
 
